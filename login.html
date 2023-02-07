@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 13%;
+        }
+
+        form{
+            width: 400px;
+            margin: 50px auto;
+            position: fixed;
+            top: 10%;
+            right: 35%;
+            
+        }
+
+        #text, #senha, .button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+        
+        .button{
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .button:hover{
+            cursor: pointer;
+            background: #ccc;
+        }
+
+        #text, #senha{
+            text-align: left;
+        }
+
+        legend{
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="#" method="post" target="_blank">
+        <fieldset>
+        <legend>Login</legend>
+        <!--Entrada de email-->
+        <label for="text">E-mail</label>
+        <input type="email" name="email" id="text" autofocus>
+        <!--Entrada de senha-->
+        <label for="senha">Senha</label>
+        <input type="password" name="password" id="senha">
+        <input type="submit" value="Entrar" class="button">
+        </fieldset>
+    </form>
+</body>
+
+</html>

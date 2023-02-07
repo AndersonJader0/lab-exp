@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+           padding: 15%;
+           box-sizing: border-box;
+           margin: auto;
+           text-align: center;
+           font-family: sans-serif;
+        }
+
+        .hidden, .visible, .auto, .scroll{
+            display: inline-block;
+            width: 20%;
+            margin: 5px;
+        }
+
+
+        .div-card{
+        background: #ccc;
+        width: 100%;
+        margin: 1% 1%;
+        display: inline-block;
+        border: solid 1px black;
+        height: 100px;
+        }
+
+        #div-1{
+        overflow: visible;
+
+        }
+
+        #div-2{
+            overflow: hidden;
+        }
+
+        #div-3{
+            overflow: auto;
+        }
+
+        #div-4{
+            overflow: scroll;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <h1>
+        Propriedade OVERFLOW.
+    </h1>
+
+
+    <div class="visible">
+        <h2>Visible</h2>
+    <div class="div-card" id="div-1">
+        <p>
+            Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+            , lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.
+        </p>
+    </div>
+    </div>
+
+    <div class="hidden">
+        <h2>Hidden</h2>
+    <div class="div-card" id="div-2">
+        <p>
+            Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+            , lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.
+        </p>
+    </div>
+    </div>
+
+    <div class="auto">
+        <h2>Auto</h2>
+    <div class="div-card" id="div-3">
+        <p>
+            Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+            , lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.
+        </p>
+    </div>
+    </div>
+
+    <div class="scroll">
+        <h2>Scroll</h2>
+    <div class="div-card" id="div-4">
+        <p>
+            Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+            , lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.
+        </p>
+    </div>
+    </div>
+
+</body>
+</html>
