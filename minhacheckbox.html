@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One personalized checkbox, useful to exercise your abilties with CSS">
+    <meta name="author" content="Anderson Jader">
+    <meta name="keywords" content="checkbox, personalized, css, exercise">
+    <title>Checkbox</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif, helvetica;
+        }
+
+        .ckb{
+            display: inline-block;
+            border: 1.5px solid #777;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            border-radius: 3px;
+            display: inline-block;
+
+        }
+
+        label[for="ckb"]{
+            display: inline-block;
+            height: 15px;  
+        }
+
+        input[type="checkbox"]{
+            display: inline-block;
+            width: 1px;
+            height: 1px;
+            margin-left: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        input[type="checkbox"]:checked + label .ckb{
+            background-color: #ffc800;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked + label .ckb:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 4px;
+            top: 0px;
+            bottom: 4px;
+            right: 4px;
+            border: 2px solid black;
+            transform: rotate(45deg);
+            border-top: none;
+            border-left: none;
+            box-sizing: boder-box;
+        }
+
+
+    </style>
+</head>
+<body>
+        <form action="" method="post" target="_blank" class="formcheck">
+        <input type="checkbox" name="check" id="ckb">
+        <label for="ckb"><span class="ckb"></span>Checkbox personalized.</label>
+        </form>
+</body>
+</html>
